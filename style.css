@@ -68,6 +68,7 @@ main {
   background-color: var(--White);
   width: 327px;
   border-radius: 10px;
+  gap: 32px;
 }
 
 .card-content {
@@ -85,7 +86,7 @@ main {
     gap: 16px;
 }
 
-.card-content img {
+.card img {
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
@@ -99,7 +100,6 @@ main {
     padding: 0 24px;
     margin-bottom: 24px;
 }
-
 
 
 .card-footer img {
@@ -132,4 +132,26 @@ main {
     transform: translate(-50%, -50%);
     width: 15px;
     height: 15px;
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row;
+        gap: 0;
+        width: 608px;
+    }
+
+    .card > img:first-child {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .card-content {
+        padding: 24px 0 24px 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .card {
+        width: 730px;
+    }
 }
