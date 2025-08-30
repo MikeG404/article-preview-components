@@ -89,6 +89,9 @@ main {
 .card img {
     width: 100%;
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    object-position: 0 20%;
+    max-height: 200px;
 }
 
 .card-footer {
@@ -138,13 +141,16 @@ main {
     .card {
         flex-direction: row;
         gap: 0;
-        width: 608px;
+        max-width: 608px;
+        width: fit-content;
+        height: 346px;
     }
 
 
     .card > img:first-child {
         border-radius: 10px 0 0 10px;
         min-width: 229px;
+        max-height: none;
     }
 
     .card-content {
@@ -159,6 +165,7 @@ main {
 
 @media (min-width: 1440px) {
     .card {
-        width: 730px;
+        width: 100%;
+        max-width: 750px;
     }
 }
