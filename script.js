@@ -3,4 +3,5 @@ const cardFooterShare = document.querySelector('.card-footer-share');
 
 cardFooter.addEventListener('click', () => {
     console.log('ok')
+    cardFooter.style.display = 'none';
 }) 
