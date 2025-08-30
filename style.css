@@ -141,12 +141,19 @@ main {
         width: 608px;
     }
 
+
     .card > img:first-child {
         border-radius: 10px 0 0 10px;
+        min-width: 229px;
     }
 
     .card-content {
-        padding: 24px 0 24px 0;
+        padding: 41px 36px 41px 0;
+        gap: 24px;
+    }
+
+    .card-footer {
+        margin-bottom: 0;
     }
 }
 
