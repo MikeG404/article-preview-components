@@ -169,3 +169,73 @@ main {
         max-width: 750px;
     }
 }
+
+
+/* IN JS */
+.list-icon {
+    display: flex;
+    list-style-type: none;
+    flex: 1;
+    padding: 22px;
+}
+
+.list-icon li a img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Styles pour la barre de partage active */
+.card-footer.active {
+    background-color: var(--Very-Dark-Grayish-Blue);
+    margin-bottom: 0;
+    border-radius: 8px;
+    padding: 16px 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.share-text {
+    color: #9CA3AF;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.social-icons li a img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.share-button-active {
+    background-color: #6B7280;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.share-button-active img {
+    width: 15px;
+    height: 15px;
+    filter: brightness(0) invert(1);
+}
+
+.share-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
