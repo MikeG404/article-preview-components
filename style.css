@@ -100,7 +100,7 @@ main {
 }
 
 /* CARD FOOTER */
-.card-footer {
+.mobile-base {
     display: flex;
     align-items: center;
     gap: 1.6rem;
@@ -110,20 +110,83 @@ main {
     flex: 1;
 }
 
-.card-footer > img {
+.mobile-base > img {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
 }
 
-.card-footer-share {
+.mobile-base .share-button{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3.2rem;
-    height: 3.2rem;
     background-color: var(--gezy-200);
     border-radius: 50%;
+    width: 3.2rem;
+    height: 3.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-base .share-button:hover {
+    background-color: var(--gezy-400);
+}
+
+/* REACT WITH JS */
+
+.mobile-share {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--gezy-900);
+    border-radius: 0 0 1rem 1rem;
+    padding: 1.8rem 3rem;
+    margin: 0 -3rem -1.8rem -3rem;
+}
+
+.mobile-share.active {
+    display: flex;
+}
+
+.mobile-share-content {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    flex: 1;
+}
+
+.share-text {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.social-icons {
+    display: flex;
+    list-style-type: none;
+    gap: 1.6rem;
+}
+
+.social-icons li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+}
+
+.share-button-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gezy-500);
+    border-radius: 50%;
+    width: 3.2rem;
+    height: 3.2rem;
+    cursor: pointer;
+}
+
+.share-button-active img {
+    filter: brightness(0) invert(1);
 }
 
 @media screen and (min-width: 768px) {
