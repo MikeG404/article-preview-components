@@ -1,0 +1,124 @@
+:root {
+    --white: #FFFFFF;
+
+    --gezy-200: #ECF2F8;
+    --gezy-400: #9DAEC2;
+    --gezy-500: #6E8098;
+    --gezy-900: #48556A;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    background-color: var(--gezy-400);
+}
+
+.text-preset-1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    letter-spacing: 0.25;
+    font-weight: 700;
+    color: var(--gezy-900);
+}
+
+.text-preset-2-medium {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    letter-spacing: 0.12;
+    font-weight: 500;
+    color: var(--gezy-500);
+}
+
+.text-preset-2-bold {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    letter-spacing: 0.12;
+    font-weight: 700;
+    color: var(--gezy-900);
+}
+
+.text-preset-3 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    letter-spacing: 25%;
+    font-weight: 400;
+    color: var(--gezy-400);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* CARD */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    height: 100%;
+    width: 32.7rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+}
+
+.card > img {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    width: 100%;
+}
+
+/* CARD CONTENT */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4.8rem;
+    padding: 0 3rem 1.8rem 3rem;
+}
+
+.card-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+/* CARD FOOTER */
+.card-footer {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.card-footer-content {
+    flex: 1;
+}
+
+.card-footer > img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.card-footer-share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: var(--gezy-200);
+    border-radius: 50%;
+}
